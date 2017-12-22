@@ -1,0 +1,128 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:300,400');
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Page Size Default */
+html, body  {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #f4f4f4;
+  overflow-x: hidden;
+}
+
+/* Default */
+
+.content-wrapper {
+  text-align: center;
+  margin: 0;
+}
+
+  .content-header {
+    background-color: #212121;
+    padding: 20px;
+  }
+
+  .principal-title {
+    font-family: "Dancing Script", sans-serif;
+    color: #e74c3c;
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .secondary-title {
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    color: white;
+    margin: 0;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 20px;
+  }
+
+  .card-wrapper {
+    width: 100%;
+    background: #e8e8e8;
+    margin: 10px 0 30px 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+/* Cardapio e Promoções */
+
+  .food-card {
+    background: #e74c3c;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    margin: 5px;
+  }
+
+  .food-card.offer {
+    background: #2ecc71 !important;
+  }
+
+  .food-card img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .food-card span {
+    color: #f4f4f4;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 50px;
+  }
+
+  .food-card hr {
+    border: .5px solid white;
+  }
+
+/* Contato */
+
+.form-control {
+  border: none;
+  width: 96%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  margin: 1px -5px;
+  resize: none;
+  outline-color: #e74c3c;
+  transition: .2s width;
+}
+
+.form-control:focus {
+  width: 96.5%;
+}
+
+textarea.form-control {
+  height: 120px;
+}
+
+.btn {
+  padding: 10px;
+  width: 100%;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+}
+
+.contact-form {
+  width: 90%;
+}

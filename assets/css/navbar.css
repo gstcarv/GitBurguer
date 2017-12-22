@@ -1,0 +1,70 @@
+/* Menu Gerai */
+.fa-bars.toggle-menu {
+  position: fixed;
+  z-index: 99;
+  margin: 25px !important;
+  font-size: 30px;
+  color: gray;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.navbar {
+  position: fixed;
+  background: #e74c3c;
+  height: 100%;
+  width: 270px;
+  z-index: 98;
+  text-align: center;
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 0, 80% 0%, 0 100%, 0% 100%);
+  transition: width .5s, clip-path 1.5s;
+}
+
+@media screen and (max-width: 780px){
+  .navbar {
+    height: 60% !important;
+    width: 0;
+    clip-path: none;
+    border-radius: 0 0 100px 0;
+  }
+}
+
+  .menu-items h1 {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 35px;
+    color: #f1f1f1;
+  }
+
+  .menu-items a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 25px;
+    margin: 70px 0;
+    transition: color .5s;
+  }
+
+  .menu-items a:hover {
+    color: #cecece;
+  }
+
+  .menu-items hr {
+    border: .5px solid white;
+  }
+
+  .credits-label {
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    color: white;
+    margin: 0;
+  }
+
+.active-item {
+  color: #ff9811 !important
+}
